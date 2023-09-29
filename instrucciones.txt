@@ -1,0 +1,11 @@
+#Construir imagen
+docker build -t node-restapi2 .
+
+# correr contenedor con terminal
+docker run -it -p 4000:3000 node-restapi2
+
+#Correr contenedor sin terminal
+docker run -d -p 4000:3000 node-restapi2
+
+#Ver contenedores corriendo
+docker ps
